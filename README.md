@@ -1,4 +1,4 @@
-[![MIT License][license-image]][license-url]
+[![Join the chat at https://gitter.im/Lion-Js](https://badges.gitter.im/Join%20Chat.svg)] [![MIT License][license-image]][license-url]
 
 A plugin of pagination beased on jquery
 
