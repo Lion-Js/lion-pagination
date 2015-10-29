@@ -10,7 +10,8 @@
     "*.js"
   ],
   "scripts": {
-    "test": "gulp build"
+    "test": "gulp build",
+    "check": "jshint gulpfile.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
   "homepage": "https://github.com/Lion-Js/lion-pagination#readme",
   "style": "dist/css/lion.pagination.css",
   "devDependencies": {
-    "jshint": "^2.8.0"
-  }
+    "gulp-jshint": "^1.12.0",
+    "jshint": "^2.8.0",
+    "pre-commit": "^1.1.2"
+  },
+  "pre-commit": [
+    "check"
+  ]
 }

@@ -17,7 +17,6 @@
   "globals":{
     "document": true,
     "define": true,
-    "Swiper": true,
     "window": true,
     "HTMLElement": true,
     "XMLSerializer": true,
