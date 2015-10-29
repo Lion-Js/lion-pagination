@@ -2,7 +2,7 @@
   "name": "lion-pagination",
   "version": "0.0.1",
   "description": "The plugin of pagination beased on jquery",
-  "main": "dist/js/lion.pagi nation.js",
+  "main": "dist/js/lion.pagination.js",
   "files": [
     "dist",
     "src",
