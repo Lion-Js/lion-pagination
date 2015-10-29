@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "gulp build",
-    "check": "jshint gulpfile.js"
+    "jshint": "./node_modules/.bin/jshint *.js ./src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,6 @@
     "pre-commit": "^1.1.2"
   },
   "pre-commit": [
-    "check"
+    "jshint"
   ]
 }
