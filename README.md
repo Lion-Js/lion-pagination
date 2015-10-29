@@ -1,4 +1,5 @@
 # lion-pagination
 the plugin of pagination beased on jquery
 
-[![gitter][gitter-image]][gitter-url]
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
