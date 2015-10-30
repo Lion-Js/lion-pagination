@@ -2,7 +2,13 @@
   "name": "lion-pagination",
   "version": "0.0.1",
   "description": "The plugin of pagination beased on jquery",
-  "main": "dist/js/lion.pagination.js",
+  "main": "dist/js/lion.pagi nation.js",
+  "files": [
+    "dist",
+    "src",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "test": "gulp build"
   },
@@ -19,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/Lion-Js/lion-pagination/issues"
   },
-  "homepage": "https://github.com/Lion-Js/lion-pagination#readme"
+  "homepage": "https://github.com/Lion-Js/lion-pagination#readme",
+  "style": "dist/css/lion.pagination.css",
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  }
 }
