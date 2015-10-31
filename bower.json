@@ -1,0 +1,22 @@
+{
+  "name": "lion-pagination",
+  "homepage": "https://github.com/Lion-Js/lion-pagination",
+  "authors": [
+    "小龙 <rainbolean@sina.com>"
+  ],
+  "description": "the plugin of pagination beased on jquery",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "pagination",
+    "plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
