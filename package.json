@@ -1,0 +1,23 @@
+{
+  "name": "lion-pagination",
+  "version": "0.0.1",
+  "description": "The plugin of pagination beased on jquery",
+  "main": "dist/js/lion.pagination.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lion-Js/lion-pagination.git"
+  },
+  "keywords": [
+    "pagination",
+    "plugin"
+  ],
+  "author": "DB.Murphy (rainbolean@sina.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lion-Js/lion-pagination/issues"
+  },
+  "homepage": "https://github.com/Lion-Js/lion-pagination#readme"
+}
