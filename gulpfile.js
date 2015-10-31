@@ -3,7 +3,7 @@
     var gulp = require('gulp');
 
     gulp.task('test', function() {
-        console.log(111);
+        console.log(222);
     });
 
     gulp.task('build', [ 'test' ]);
