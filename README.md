@@ -1,6 +1,6 @@
 [![gitter][gitter-image]][gitter-url]
 [![MIT License][license-image]][license-url]
-[![Build Status[travis-image]][travis-url]
+[![Build Status][travis-image]][travis-url]
 
 A plugin of pagination beased on jquery
 
