@@ -30,7 +30,12 @@
   "style": "dist/css/lion.pagination.css",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
     "gulp-jshint": "^1.12.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
     "jshint": "^2.8.0",
     "pre-commit": "^1.1.2"
   },
