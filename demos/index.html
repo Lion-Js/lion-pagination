@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>lion-pagination</title>
 	<link rel="stylesheet" type="text/css" href="../dist/css/lion.pagination.min.css">
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../dist/js/lion.pagination.min.js"></script>
 	<style type="text/css">
 	*{
 		margin: 0px;
@@ -20,7 +22,7 @@
 		text-align: center;
 		font-size: 60px;
 		color: #fff;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 	.title p{
 		font-size: 12px;
@@ -44,21 +46,23 @@
 	<div class="container">
 		<div class="lion-pagination">
 			<ul>
-				<li>
-					<a href="javascript:;" class="lion-previous">
+				<li class="lion-previous disable">
+					<a href="javascript:;">
 						<span>&laquo;</span>
 					</a>
 				</li>
-				<li class="active"><a href="javascript:;">1</a></li>
-				<li><a href="javascript:;">2</a></li>
-				<li><a href="javascript:;">3</a></li>
-				<li><a href="javascript:;">4</a></li>
-				<li><a href="javascript:;">5</a></li>
-				<li><a href="javascript:;">6</a></li>
-				<li><a href="javascript:;">7</a></li>
-				<li><a href="javascript:;">8</a></li>
-				<li class="nobr">
-					<a href="javascript:;" class="lion-next">
+				<li class="active page_number"><a href="javascript:;">1</a></li>
+				<li class="page_number"><a href="javascript:;">2</a></li>
+				<li class="page_number"><a href="javascript:;">3</a></li>
+				<li class="page_number"><a href="javascript:;">4</a></li>
+				<li class="page_number"><a href="javascript:;">5</a></li>
+				<li class="page_number"><a href="javascript:;">6</a></li>
+				<li class="page_number"><a href="javascript:;">7</a></li>
+				<li class="page_number"><a href="javascript:;">8</a></li>
+				<li class="page_number"><a href="javascript:;">9</a></li>
+				<li class="page_number"><a href="javascript:;">10</a></li>
+				<li class="nobr lion-next">
+					<a href="javascript:;">
 						<span>&raquo;</span>
 					</a>
 				</li>
@@ -72,4 +76,12 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	$('.lion-pagination').lion_pagination({
+		request: function(pagination) {
+			var _this = this;
+
+		}
+	});
+</script>
 </html>

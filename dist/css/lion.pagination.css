@@ -1,3 +1,10 @@
+/*!
+ * lion-pagination.js v0.1.5 (https://github.com/Lion-Js/lion-pagination)
+ * Copyright DB.Murphy
+ * 2015/11/21
+ * Email: rainbolean@sina.com
+ * Licensed under the MIT license
+ */
 .lion-pagination {
   display: inline-block;
 }
@@ -41,6 +48,9 @@
   background: #6f5499;
   color: #fff;
 }
+.lion-pagination li.disable {
+  display: none;
+}
 .lion-pagination .lion-jump {
   display: inline-block;
   float: left;
@@ -83,6 +93,10 @@
   font-size: 14px;
   padding: 0px 10px;
   float: left;
+  text-decoration: none;
+}
+.lion-pagination .lion-jump .lion-jump-btn:hover {
+  text-decoration: underline;
 }
 .lion-pagination .lion-page-info {
   display: inline-block;
@@ -94,12 +108,4 @@
   display: inline-block;
   height: 30px;
   line-height: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: #08c;
-}
-a:hover {
-  color: #006699;
 }
