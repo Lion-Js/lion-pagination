@@ -10,7 +10,7 @@
     "*.js"
   ],
   "scripts": {
-    "test": "gulp build",
+    "test": "gulp",
     "jshint": "./node_modules/.bin/jshint *.js ./src/**/*.js"
   },
   "repository": {
