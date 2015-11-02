@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>lion-pagination</title>
+	<link rel="stylesheet" type="text/css" href="../build/css/lion.pagination.min.css">
 	<style type="text/css">
 	*{
 		margin: 0px;
@@ -10,10 +11,10 @@
 	}
 	html, body{
 		font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-		background: #6f5499;
 	}
 	.title{
-		padding: 50px 0;
+		padding: 100px 0;
+		background: #6f5499;
 	}
 	.title h1{
 		text-align: center;
@@ -25,6 +26,10 @@
 		text-align: center;
 		color: #e8e8e8;
 		padding-top: 2px;
+	}
+	.container{
+		text-align: center;
+		margin: 50px auto;
 	}
 	</style>
 </head>
@@ -48,7 +53,7 @@
 				<li><a href="javascript:;">3</a></li>
 				<li><a href="javascript:;">4</a></li>
 				<li><a href="javascript:;">5</a></li>
-				<li>
+				<li class="nobr">
 					<a href="javascript:;" class="lion-next">
 						<span>&raquo;</span>
 					</a>
@@ -57,7 +62,7 @@
 			<div class="lion-jump">
 				<span>跳转到:</span>
 				<input type="text">
-				<a href="javascript:;">跳转</a>
+				<a class="lion-jump-btn" href="javascript:;">跳转</a>
 			</div>
 			<p class="lion-page-info">第<span class="lion-page-now">2</span>/<span class="lion-page-total">10</span>页</p>
 		</div>

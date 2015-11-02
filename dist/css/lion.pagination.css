@@ -1,60 +1,97 @@
-body {
-  font-family: Helvetica, sans-serif;
-  color: #333;
-  height: 100px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-nav li {
+.lion-pagination {
   display: inline-block;
 }
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
+.lion-pagination:before, .lion-pagination:after {
+  content: " ";
+  display: table;
 }
-
-.box-border {
-  border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.lion-pagination:after {
+  clear: both;
 }
-
-.message, .success, .error, .warning {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
-}
-
-.success {
-  border-color: green;
-}
-
-.error {
-  border-color: red;
-}
-
-.warning {
-  border-color: yellow;
-}
-
-.container {
-  width: 100%;
-}
-
-article[role="main"] {
+.lion-pagination ul {
+  display: inline-block;
+  background: #fff;
   float: left;
-  width: 62.5%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
-
-aside[role="complimentary"] {
-  float: right;
-  width: 31.25%;
+.lion-pagination ul:before, .lion-pagination ul:after {
+  content: " ";
+  display: table;
+}
+.lion-pagination ul:after {
+  clear: both;
+}
+.lion-pagination li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+  border-right: 1px solid #ddd;
+}
+.lion-pagination li a {
+  display: inline-block;
+  padding: 0px 12px;
+  height: 30px;
+  text-decoration: none;
+  color: #6f5499;
+  line-height: 30px;
+}
+.lion-pagination li.nobr {
+  border: none;
+}
+.lion-pagination .lion-jump {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  padding-right: 5px;
+}
+.lion-pagination .lion-jump:before, .lion-pagination .lion-jump:after {
+  content: " ";
+  display: table;
+}
+.lion-pagination .lion-jump:after {
+  clear: both;
+}
+.lion-pagination .lion-jump input {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+}
+.lion-pagination .lion-jump span {
+  color: #6f5499;
+  font-size: 14px;
+  margin-left: 20px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+.lion-pagination .lion-jump .lion-jump-btn {
+  display: inline-block;
+  background: #6f5499;
+  color: #fff;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0px 10px;
+  float: left;
+}
+.lion-pagination .lion-page-info {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  color: #6f5499;
+}
+.lion-pagination .lion-page-info span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
 }
 
 a {

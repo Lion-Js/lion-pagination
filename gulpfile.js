@@ -6,20 +6,26 @@
     var concat = require('gulp-concat');
     var rename = require('gulp-rename');
     var minify_css = require('gulp-minify-css');
+    var shelljs = require('shelljs');
 
     //编译sass文件
     gulp.task('compile_sass', function() {
+    	shelljs.rm('-rf', './build/css');
 		return gulp.src('./src/sass/pages/*.scss')
 			.pipe(plumber())
 			.pipe(compass({
-			    css: './build/css',
-      		    sass: './src/sass/pages'
+			    css: './build/css/',
+      		    sass: './src/sass/'
 			}))
-			.pipe(minify_css())
-		    .pipe(rename(function(path) {
-		        path.basename += '.min';
-		    }))
-		    .pipe(gulp.dest('./build/css'));
+		    .pipe(gulp.dest('./build/css'))
+		    .on('end', function() {
+		    	gulp.src('./build/css/*.css')
+		    		.pipe(minify_css())
+		    		.pipe(rename(function(path) {
+				        path.basename += '.min';
+				    }))
+				    .pipe(gulp.dest('./build/css'));
+		    });
 	});
 
     //watch
