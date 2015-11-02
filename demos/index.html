@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>demo1</title>
+	<title>lion-pagination</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	html, body{
+		font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+		background: #6f5499;
+	}
+	.title{
+		padding: 50px 0;
+	}
+	.title h1{
+		text-align: center;
+		font-size: 60px;
+		color: #fff;
+	}
+	.title p{
+		font-size: 12px;
+		text-align: center;
+		color: #e8e8e8;
+		padding-top: 2px;
+	}
+	</style>
 </head>
 <body>
-	
+	<div class="title">
+		<h1>lion-pagination</h1>
+		<p>Author: DB.Murphy</p>
+		<p>Email: rainbolean@sina.com</p>
+		<p>Blog: http://db-murphy.github.io</p>
+	</div>
+	<div class="container">
+		<div class="lion-pagination">
+			<ul>
+				<li>
+					<a href="javascript:;" class="lion-previous">
+						<span>&laquo;</span>
+					</a>
+				</li>
+				<li><a href="javascript:;">1</a></li>
+				<li><a href="javascript:;">2</a></li>
+				<li><a href="javascript:;">3</a></li>
+				<li><a href="javascript:;">4</a></li>
+				<li><a href="javascript:;">5</a></li>
+				<li>
+					<a href="javascript:;" class="lion-next">
+						<span>&raquo;</span>
+					</a>
+				</li>
+			</ul>
+			<div class="lion-jump">
+				<span>跳转到:</span>
+				<input type="text">
+				<a href="javascript:;">跳转</a>
+			</div>
+			<p class="lion-page-info">第<span class="lion-page-now">2</span>/<span class="lion-page-total">10</span>页</p>
+		</div>
+	</div>
 </body>
 </html>
