@@ -9,6 +9,21 @@
 ;(function($) {
 	'use strict';
 	function main(obj, opts) {
+
+		var page_info = {
+			page_now: 1,
+			page_jump: 1,
+			get_page_success: function() {
+				this.page_now = this.page_jump;
+				if(this.page_now !== 1) {
+					$('.lion-previous', obj).removeClass('disable');
+				}else{
+					$('.lion-previous', obj).addClass('disable');
+				}
+				$('.page_number', obj).removeClass('active').eq(this.page_now - 1).addClass('active');
+			}
+		};
+
 		obj.bind('click', function(ev) {
 			var target = $(ev.target);
 
@@ -21,9 +36,8 @@
 			}else if(target.closest('.page_number').length && !target.closest('.page_number').hasClass('active')) {
 				var page_jump = parseInt(target.closest('.page_number').text());
 
-				opts.request({
-					page_jump: page_jump
-				});
+				page_info.page_jump = page_jump;
+				opts.request(page_info);
 			}
 		});
 	}
@@ -40,7 +54,5 @@
 	};
 
     //插件的defaults    
-	$.fn.lion_pagination.defaults = {
-		page_now: 1
-	};
+	$.fn.lion_pagination.defaults = {};
 })(jQuery);

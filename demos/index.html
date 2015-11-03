@@ -32,7 +32,7 @@
 	}
 	.container{
 		text-align: center;
-		margin: 50px auto;
+		margin-top: 100px;
 	}
 	</style>
 </head>
@@ -68,9 +68,8 @@
 				</li>
 			</ul>
 			<div class="lion-jump">
-				<span>跳转到:</span>
 				<input type="text">
-				<a class="lion-jump-btn" href="javascript:;">跳转</a>
+				<a class="lion-jump-btn" href="javascript:;">GO</a>
 			</div>
 			<p class="lion-page-info">第<span class="lion-page-now">2</span>/<span class="lion-page-total">10</span>页</p>
 		</div>
@@ -79,8 +78,7 @@
 <script type="text/javascript">
 	$('.lion-pagination').lion_pagination({
 		request: function(pagination) {
-			var _this = this;
-
+			pagination.get_page_success();
 		}
 	});
 </script>
