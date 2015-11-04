@@ -78,6 +78,7 @@
 <script type="text/javascript">
 	$('.lion-pagination').lion_pagination({
 		request: function(pagination) {
+			console.log(pagination.page_jump);
 			pagination.get_page_success();
 		}
 	});
