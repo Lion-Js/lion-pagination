@@ -38,16 +38,28 @@
 			if(target.closest('.lion-jump-btn').length) {
 
 			}else if(target.closest('li').hasClass('lion-previous')) {
-
+				page_info.page_jump = page_info.page_now - 1;
+				for(var i = 0; i < btns.length; i++) {
+					if(btns.eq(i).hasClass('active')) {
+						page_info.click_index = i - 2;
+						break;
+					}
+				}
 			}else if(target.closest('li').hasClass('lion-next')) {
-
+				page_info.page_jump = page_info.page_now + 1;
+				for(var j = 0; j < btns.length; j++) {
+					if(btns.eq(j).hasClass('active')) {
+						page_info.click_index = j + 2;
+						break;
+					}
+				}
 			}else if(target.closest('.page_number').length && !target.closest('.page_number').hasClass('active')) {
 				var page_jump = parseInt(target.closest('.page_number').text());
 
 				page_info.page_jump = page_jump;
 				page_info.click_index = target.closest('.page_number').index();
-				opts.request(page_info);
 			}
+			opts.request(page_info);
 		});
 	}
 
